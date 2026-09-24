@@ -22,17 +22,16 @@ Abonify is a fertilizer e-commerce platform designed for local farmers, growers,
 ## Repository Structure
 
 ```text
-/docs
-    ProjectOverview.md
-
-/src
-    .gitkeep
-
-/tests
-    .gitkeep
-
-/integration
-    .gitkeep
+ITE412_SIA2_Abonators_Abonify/
+├── docs/
+│   └── ProjectOverview.md
+├── src/
+│   └── .gitkeep
+├── tests/
+│   └── .gitkeep
+├── integration/
+│   └── .gitkeep
+└── README.md
 ```
 
 ## Repository Usage Notes
