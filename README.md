@@ -8,8 +8,8 @@ ITE 412 – System Integration and Architecture 2
 
 | Name                      | Role          |
 | -----------------------   | ------------- |
-| Fortu, Charls             | Project Lead  |
-| Madrigal, Cristina B.     | Diagrammer    |
+| Madrigal, Cristina B.     | Project Lead  |
+| Fortu, Charls             | Diagrammer    |
 | Manalad, Donna Kriszelle  | Documenter    |
 | Gasco, Rosa Mae           | Presenter     |
 
