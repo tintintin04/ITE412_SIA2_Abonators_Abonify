@@ -6,12 +6,12 @@ ITE 412 – System Integration and Architecture 2
 
 ## Team Members
 
-| Name                      | Role          |
-| -----------------------   | ------------- |
-| Madrigal, Cristina B.     | Project Lead  |
-| Fortu, Charls             | Diagrammer    |
-| Manalad, Donna Kriszelle  | Documenter    |
-| Gasco, Rosa Mae           | Presenter     |
+| Name                         | Role          |
+| -----------------------------| ------------- |
+| Fortu, Charls                | Project Lead  |
+| Madrigal, Cristina B.        | Diagrammer    |
+| Manalad, Donna Kriszelle D.  | Documenter    |
+| Gasco, Rosa Mae              | Presenter     |
 
 ## Project Description
 
