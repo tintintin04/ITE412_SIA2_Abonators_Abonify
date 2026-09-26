@@ -5,6 +5,7 @@
 <p align="justify">
 Abonify aims to provide an agricultural supply e-commerce and delivery system for local farmers, growers, and agri-shops. The system will help users find and purchase organic and inorganic fertilizers while providing clearer product prices and delivery coordination. It will also help agri-sellers manage their products and orders in one platform.
 </p>
+
 ## 2. Proposed Scope
 
 The project will integrate the following modules:
