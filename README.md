@@ -6,12 +6,12 @@ ITE 412 – System Integration and Architecture 2
 
 ## Team Members
 
-| Name                         | Role          |
-| -----------------------------| ------------- |
-| Fortu, Charls                | Project Lead  |
-| Madrigal, Cristina B.        | Diagrammer    |
-| Manalad, Donna Kriszelle D.  | Documenter    |
-| Gasco, Rosa Mae              | Presenter     |
+| Name                         | Role                |
+| -----------------------------| --------------------|
+| Fortu, Charls Agustin M.     | Project Lead        |
+| Madrigal, Cristina B.        | Diagram Designer    |
+| Manalad, Donna Kriszelle D.  | Documenter          |
+| Gasco, Rosa May S.           | Presenter           |
 
 ## Project Description
 
@@ -19,26 +19,12 @@ ITE 412 – System Integration and Architecture 2
 Abonify is a fertilizer e-commerce platform designed for local farmers, growers, and agri-shops. The system provides a platform where users can browse and purchase fertilizer products while agri-sellers can manage their products, inventory, prices, and orders. It also supports order management, payment proof submission, and delivery coordination.
 </p>
 
-## Repository Structure
-
-```text
-ITE412_SIA2_Abonators_Abonify/
-├── docs/
-│   └── ProjectOverview.md
-├── src/
-│   └── .gitkeep
-├── tests/
-│   └── .gitkeep
-├── integration/
-│   └── .gitkeep
-└── README.md
-```
 
 ## Repository Usage Notes
 
 This repository contains the documentation, source code, test cases, and integration files for the Abonify project.
 
-### Getting Started
+### Getting Started (for the group members)
 
 1. Clone the repository.
 2. Open the project folder in a code editor.
@@ -53,4 +39,4 @@ Team members should create a feature branch for their assigned task, make their 
 
 ### Communication
 
-The team will use available communication platforms for project discussions, task assignments, updates, and coordination.
+The team will use available communication platforms like messenger for project discussions, task assignments, updates, and coordination.
