@@ -48,7 +48,8 @@ The project will integrate the following modules:
 
 * **Languages/Frameworks:** React, Vite, TypeScript/TSX
 * **Database/Storage:** Firebase Firestore
+* **Development Environment:** Visual Studio Code
+* **Version Control:** Git and GitHub
 * **Integration Approach:** REST APIs and other appropriate API-based integrations
-* **Repository/Services:** GitHub
 * **External Services:** Google Maps
 * **Testing Tools:** Postman and browser developer tools
