@@ -54,3 +54,78 @@ The project will integrate the following modules:
 * **Integration Approach:** REST APIs and other appropriate API-based integrations
 * **External Services:** Google Maps
 * **Testing Tools:** Postman and browser developer tools
+
+---
+
+# HIGH LEVEL SYSTEM OVERVIEW
+
+## System Overview
+
+**Abonify** is a multi-sided e-commerce and logistics platform that connects local farmers and gardeners with accredited agricultural supply merchants and independent delivery couriers. The platform streamlines fertilizer procurement, supports delivery coordination for agricultural supplies, and provides intelligent crop-care guidance.
+
+---
+
+## 1. Major Modules / Subsystems
+
+### 1.1 Marketplace, Cart & Order Fulfillment Subsystem
+
+This subsystem enables customers to search, filter, and purchase fertilizers, including organic fertilizers, chemical fertilizers, and soil conditioners from local agricultural supply stores. It manages cart aggregation, delivery location selection, and order status transitions from **Pending**, **Preparing**, **Ready for Pickup**, **In Transit**, to **Delivered**.
+
+For agri-sellers, the subsystem supports product listing management, inventory monitoring, critical stock alerts, and the generation of printable inventory reports and sales documents.
+
+### 1.2 Logistics & Geolocation Subsystem
+
+This subsystem manages the delivery process for motorcycle and utility vehicle riders. It provides available delivery jobs, supports rider assignment, calculates routes between merchant locations and customer delivery locations using digital maps, and tracks delivery progress.
+
+It also supports **Proof of Delivery (POD)** through photo uploads before an order is marked as delivered.
+
+
+---
+
+## 2. External Systems & Interfaces
+
+### 2.1 Google Maps Platform
+
+The Google Maps Platform provides geospatial services for the system. It supports address geocoding, delivery location coordinates, map-based location selection, and route generation for delivery riders.
+
+### 2.2 Payment Gateway Interface
+
+The Mock GCash subsystem simulates a mobile e-wallet payment workflow. It supports transaction reference numbers, payment verification, and the submission of payment receipt screenshots.
+
+### 2.3 jsPDF Document Engine
+
+The jsPDF library provides client-side document generation for inventory summaries and sales-related reports. It allows the system to generate printable PDF documents without requiring server-side document rendering.
+
+### 2.4 Firebase / Firestore
+
+Firebase Firestore serves as the cloud persistence layer for the system. It stores system data such as user records, product information, order records, and delivery logs.
+
+---
+
+## 3. Data Flow Summary
+
+Data movement within Abonify follows the activities of its four principal stakeholder roles: **Customer, Seller, Rider, and Administrator**.
+
+### 3.1 Catalog Setup & Seller Accreditation
+
+An agri-shop registers and submits its account and business information. The Administrator reviews the submitted information and approves or rejects the seller account. Once approved, the seller can create and manage fertilizer product listings, which are stored in the product catalog.
+
+### 3.2 Ordering
+
+The farmer can then browse products, add items to the cart, select a delivery location using the map interface, and proceed with checkout using the available payment options.
+
+### 3.3 Fulfillment & Inventory Adjustment
+
+After an order is placed, the system records the transaction and updates the relevant inventory information. The seller receives the order information and can update the order status through the fulfillment process:
+
+**Pending → Preparing → Ready for Pickup**
+
+### 3.4 Logistics & Delivery
+
+When an order is ready for pickup, it becomes available to riders for delivery assignment. The assigned rider receives the delivery information and route details generated through the mapping service.
+
+The rider updates the delivery status to **In Transit** and submits a Proof of Delivery photo after completing the delivery. The order is then marked as **Delivered**.
+
+### 3.5 Auditing & History
+
+Completed transactions are reflected in the appropriate records and user histories. The system maintains information related to customer orders, seller transactions, rider delivery activities, and administrative audit records.
