@@ -147,9 +147,11 @@ The Hub-Spoke pattern was selected for Abonify because the system has several mo
 
 ## Messaging Workflow
 
+<p align="justify">
 Abonify uses a simple in-memory message queue prototype to demonstrate asynchronous communication between the Order Module and the Approval Module. The Order Module acts as the producer by submitting order requests to the message queue. Each request contains the customer name, product ID, quantity, and total amount.
 
 The Approval Module acts as the consumer by retrieving the order requests from the queue and processing them one by one. For this prototype, an order with a total amount of ₱50,000 or below is marked as Approved, while an order above ₱50,000 is marked as Rejected. This threshold is used only for demonstrating the messaging workflow and is not an existing Abonify business rule.
+</p>
 
 The messaging flow is:
 
