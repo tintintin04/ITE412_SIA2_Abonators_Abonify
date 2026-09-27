@@ -31,6 +31,18 @@ This repository contains the documentation, source code, test cases, and integra
 3. Install the required dependencies once the source code is available.
 4. Run the project using the provided development commands.
 
+### REST API Usage Notes
+
+The Abonify REST API is located in the `/src/api` folder and uses Node.js with Express.
+
+1. Go to the `/src/api` folder.
+2. Run `node server.js` to start the API.
+3. Test the endpoints using Postman:
+   - `GET /products` – retrieves all products.
+   - `POST /products` – adds a new product.
+   - `GET /orders` – retrieves all orders.
+   - `POST /orders` – adds a new order.
+
 ### Collaboration Workflow
 
 <p align="justify">
