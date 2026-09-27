@@ -129,3 +129,18 @@ The rider updates the delivery status to **In Transit** and submits a Proof of D
 ### 3.5 Auditing & History
 
 Completed transactions are reflected in the appropriate records and user histories. The system maintains information related to customer orders, seller transactions, rider delivery activities, and administrative audit records.
+
+---
+
+## INTEGRATION PATTERN APPLIED
+
+### Integration Pattern Applied
+**Hub-Spoke**
+
+### Rationale
+The Hub-Spoke pattern was selected for Abonify because the system has several modules that need to exchange information. The Abonify Integration Hub serves as the central point that routes communication between users and the system modules. This reduces the need for direct connections between every module and keeps the communication more organized. It also allows modules such as User Management, Product & Inventory, Order Management, Payment, and Delivery Management to work together through a central integration point.
+
+### Diagram Reference
+![Abonify High-Level Architecture Diagram](HighLevelArch.png)
+
+**Draw.io Diagram:** [Open the editable diagram](https://drive.google.com/file/d/1GjPn6iHX3g-7uUCsWLmcWSYGMu67fc1d/view?usp=sharing)
