@@ -144,3 +144,15 @@ The Hub-Spoke pattern was selected for Abonify because the system has several mo
 ![Abonify High-Level Architecture Diagram](HighLevelArch.png)
 
 **Draw.io Diagram:** [Open the editable diagram](https://drive.google.com/file/d/1GjPn6iHX3g-7uUCsWLmcWSYGMu67fc1d/view?usp=sharing)
+
+## Messaging Workflow
+
+Abonify uses a simple in-memory message queue prototype to demonstrate asynchronous communication between the Order Module and the Approval Module. The Order Module acts as the producer by submitting order requests to the message queue. Each request contains the customer name, product ID, quantity, and total amount.
+
+The Approval Module acts as the consumer by retrieving the order requests from the queue and processing them one by one. For this prototype, an order with a total amount of ₱50,000 or below is marked as Approved, while an order above ₱50,000 is marked as Rejected. This threshold is used only for demonstrating the messaging workflow and is not an existing Abonify business rule.
+
+The messaging flow is:
+
+Order Module → Message Queue → Approval Module → Approval Decision
+
+This prototype demonstrates how modules can communicate asynchronously through a message queue without directly depending on each other's processing. The middleware implementation is located in `/integration/middleware`.

@@ -1,0 +1,37 @@
+const { enqueue, dequeue, isEmpty } = require("./queue");
+
+const sampleOrders = [
+  {
+    customerName: "Pedro Reyes",
+    productId: 1,
+    quantity: 3,
+    totalAmount: 2550
+  },
+  {
+    customerName: "Maria Santos",
+    productId: 2,
+    quantity: 5,
+    totalAmount: 2250
+  },
+  {
+    customerName: "Juan Dela Cruz",
+    productId: 1,
+    quantity: 70,
+    totalAmount: 59500
+  }
+];
+
+// Add sample orders to the queue
+sampleOrders.forEach((order) => enqueue(order));
+
+// Process orders one by one
+while (!isEmpty()) {
+  const order = dequeue();
+
+  const decision =
+    order.totalAmount <= 50000 ? "Approved" : "Rejected";
+
+  console.log(
+    `Order request for ${order.customerName} → ${decision}`
+  );
+}
