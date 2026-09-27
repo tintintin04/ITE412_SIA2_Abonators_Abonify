@@ -52,3 +52,13 @@ Team members should create a feature branch for their assigned task, make their 
 ### Communication
 
 The team will use available communication platforms like messenger for project discussions, task assignments, updates, and coordination.
+
+## Messaging Middleware
+
+The project includes a simple in-memory message queue prototype under `/integration/middleware`. It demonstrates asynchronous communication between the Order Module and Approval Module using a Producer-Queue-Consumer workflow.
+
+To run the messaging middleware demo:
+
+```bash
+node integration/middleware/demo.js
+```
